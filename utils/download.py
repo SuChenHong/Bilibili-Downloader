@@ -97,15 +97,3 @@ class Download:
             mode=mode, unit=unit, unit_scale=unit_scale, type='text', encoding=encoding
         )
 
-
-if __name__ == "__main__":
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-        'Referer': 'https://www.bilibili.com/',
-        'Origin': 'http://bilibili.com'
-    }
-    req = requests.get(url='https://upos-sz-estgoss.bilivideo.com/upgcxcode/83/86/1387648683/1387648683-1-192.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1707067869&gen=playurlv2&os=upos&oi=3062063868&trid=fd19119fbadf4973ab6f27c51f62e403u&mid=11812662&platform=pc&upsig=8d97d89793e858d1f3ecc362fd02bb32&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&orderid=0,3&buvid=B4F774B4-6BF9-DCA9-C649-12237F926EEA64795infoc&build=0&f=u_0_0&agrr=0&bw=35863&logo=80000000', stream=True, headers=headers)
-    # print(req.text)
-    # download_stream(file=req, filename='deco.mp4', chunk_size=1024)
-    download = Download()
-    download.download_stream(file=req, filename=None, chunk_size=1024)
