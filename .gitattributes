@@ -1,1 +1,4 @@
 *.py linguist-language=Python
+*.txt linguist-language=Python
+*.xml linguist-language=Python
+*.pyc linguist-language=Python
